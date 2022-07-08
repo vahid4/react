@@ -1,4 +1,10 @@
 const Main =()=>{
-    return <main>Ovo je main</main>
+    return (
+    <div>
+    
+    
+    
+    <main>Ovo je main</main>
+    </div>)
 }
 export default Main
