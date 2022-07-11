@@ -2,34 +2,42 @@
   padding: 0px;
   margin: 0px;
 }
-.mojaK{
-  background-color: coral;
+.container{
+  background-color: rgb(253, 208, 191);
   width: 100%;
-  height: 80vh;
+  height: 100vh;
+  padding-top: 50px;
 }
-.lista{
-  width: 100%;
-  height: 10vh;
-  background-color:burlywood;
-  
-  
+h1{
+  text-align: center;
+  color: black;
+  font-weight: 600;
+  font-size: 35px;
 }
-ul {
-   display: flex;
-   justify-content: space-evenly;
-   
+.form{
+ display: flex;
+ justify-content: center;
 }
-li{
-  margin: 20px;
-  list-style-type: none;
-  /* border: 1px black solid; */
-  background-color: chocolate;
-  
+.form button{
+  background-color: purple;
+  border: none;
+  padding: 10px 10px;
+
 }
-.kartica{
-  width: 200px;
-  height: 200px;
-  border: 1px red solid;
+.card{
   display: flex;
-  justify-content: center;
+ justify-content: center;
+ padding-top: 10px;
+}
+
+.submit{
+  border: none;
+  padding: 10px 10px;
+  background-color: green;
+
+}
+.delete{
+  border: none;
+  padding: 10px 10px;
+  background-color:red;
 }
