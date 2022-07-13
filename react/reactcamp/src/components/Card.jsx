@@ -1,14 +1,24 @@
+import { useState } from "react"
+
 const Card=()=>{
-    const [boja, setboja] = useState(true)
- return(   <div className="card">
+    
+   const[bledo, setbledo]=useState(false)
+   
+
+ return(   <div className="card" style={{opacity:bledo?"0.5":"", marginLeft:bledo?"50px":""}}>
 <input type="text" onChange={()=>{
     console.log("U changed input-task")
 }}/>
-<button className="submit" onClick={()=>{
+<button className="submit"   onClick={()=>{{}
     console.log("Element submited")
+    setbledo(!bledo)
+    console.log(bledo);
+
 }}>Submit</button>
 <button className="delete" onClick={()=>{
     console.log("Deleted")
+    setbledo(!bledo)
+    console.log(bledo)
 }}>Delete</button>
 </div>)
 }
