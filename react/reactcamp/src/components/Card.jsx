@@ -1,4 +1,5 @@
 const Card=()=>{
+    const [boja, setboja] = useState(true)
  return(   <div className="card">
 <input type="text" onChange={()=>{
     console.log("U changed input-task")

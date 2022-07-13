@@ -1,22 +1,39 @@
 import "./App.css";
-import Card from "./components/Card";
 import { useState } from "react";
 
 
 
+
+
+
 const App =()=>{
-    const [isCardShown, setisCardShown] = useState(false)
-    return(
+    
+  const[counter, setCounter]= useState(0)
+  return(
       <div className="container">
-        <button 
-        onClick={()=>{
-            console.log("btn is clicked");
-            setisCardShown(!isCardShown)
-            console.log(isCardShown);
-        }}
-        >Show/Hide</button>
-        {isCardShown &&<Card value={"nesto"}></Card>}
-        </div>
-    )    
+
+         <button
+         onClick={()=>{
+          //console.log("Counter shoud -1");
+          setCounter(counter-1);
+          //console.log(counter);
+
+         }} className="dugme">-1</button>
+           <h1>{counter}</h1>
+         <button
+          onClick={()=>{
+            //  console.log("Counter shoud -1");
+              setCounter(counter+1);
+             // console.log(counter);
+  
+             }}  className="dugme">+1</button>
+
+
+
+
+      </div>
+       
+  );
 };
 export default App
+
