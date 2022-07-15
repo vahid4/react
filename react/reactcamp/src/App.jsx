@@ -4,13 +4,11 @@ import Card from "./components/Card";
 
 
 
-
-
 const App =()=>{
    
   return(
     <div className="container">
-    <h1>Vahids todo list</h1>
+    <h1>Vahid's todo list</h1>
     <div className="form">
 <input type="text" onChange={()=>{
 console.log("Changed")
