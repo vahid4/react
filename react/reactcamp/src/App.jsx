@@ -1,36 +1,38 @@
 import "./App.css";
-import { useState } from "react";
-import Card from "./components/Card";
+import { useEffect,useState } from "react";
+import DessertCard from "DessertCard.jsx"
+
+
+//https://random-data-api.com/api/dessert/random_dessert?size=100
 
 
 
 const App =()=>{
-   
+const[kolac, drugiKolac]=useState(0)
+const dessert=async() =>{
+  const response= await fetch("https://random-data-api.com/api/dessert/random_dessert?size=100")
+ const data=await response.json()
+    
+    drugiKolac([ data])
+    console.log(data);
+    
+  };
+
+useEffect(()=>{
+  dessert()
+}, []);
+
   return(
     <div className="container">
-    <h1>Vahid's todo list</h1>
-    <div className="form">
-<input type="text" onChange={()=>{
-console.log("Changed")
-}}/>
-<button onClick={()=>{
-console.log("Clicked")
-}}>Add</button>
-    </div>
-
-<Card />
-<Card />
-<Card />
-<Card />
-<Card />
-<Card />
-<Card />
-<Card />
+      {kolac.map((e)=>{
+        return <DessertCard des={e} key={e.uid} />
+      })}
     </div>
     
-     
-);
+    
   
-};
+);
+    }
+;
 export default App
 
