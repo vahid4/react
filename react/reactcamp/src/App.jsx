@@ -1,38 +1,21 @@
 import "./App.css";
 import { useEffect,useState } from "react";
-import DessertCard from "DessertCard.jsx"
+import Calculator from "./components/Calculator";
+import Jokes from "./components/Jokes/Jokes";
+import axios from "axios"
 
 
-//https://random-data-api.com/api/dessert/random_dessert?size=100
-
-
-
+//https://rapidapi.com/divad12/api/numbers-1/
 const App =()=>{
-const[kolac, drugiKolac]=useState(0)
-const dessert=async() =>{
-  const response= await fetch("https://random-data-api.com/api/dessert/random_dessert?size=100")
- const data=await response.json()
-    
-    drugiKolac([ data])
-    console.log(data);
-    
-  };
-
-useEffect(()=>{
-  dessert()
-}, []);
 
   return(
-    <div className="container">
-      {kolac.map((e)=>{
-        return <DessertCard des={e} key={e.uid} />
-      })}
-    </div>
+     <div>
     
-    
+     </div>
+    )
   
-);
+
     }
-;
+
 export default App
 

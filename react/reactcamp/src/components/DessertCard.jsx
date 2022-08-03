@@ -9,4 +9,4 @@ const DessertCard=({des})=>{
     )
 }
 
-export default DessertCard
+export default DessertCard;

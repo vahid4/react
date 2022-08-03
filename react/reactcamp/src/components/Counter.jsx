@@ -4,7 +4,7 @@ const Counter =()=>{
     const[counter, setCounter]= useState(0)
     return(
         <div className="container">
-          <div><h1>Counter</h1></div>
+          <div className="counterime"><h1>Counter</h1></div>
   
            <button
            onClick={()=>{
