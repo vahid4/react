@@ -2,25 +2,26 @@
   padding: 0px;
   margin: 0px;
   box-sizing: border-box;
-  font-family: 'Fira Sans', sans-serif;
+ 
 }
+/*
 .container{
   background-color: rgb(253, 208, 191);
   width: 100%;
   height: 100vh;
   /* padding-top: 50px; */
-  display: flex;
+  /*display: flex;*/
  /* justify-content: center; */
- align-items: center;
+ /*align-items: center;
  flex-direction: column;
-}
+}*/
 
 /* h1{
   text-align: center;
   color: black;
   font-weight: 600;
   font-size: 35px;
-} */
+} 
 .form{
  display: flex;
  justify-content: center;
@@ -75,6 +76,7 @@ width: 50px;
 }
 /* 
 domaci rad kalkulator */
+/*
 :root{
   --primary:#d81e5b;
   --secondary:#8c38ff;
@@ -127,7 +129,7 @@ font-weight: 300;
   cursor: pointer;
   transition: 0.4s;
 } */
-
+/*
 button:hover{
   opacity: 0.9;
 }
@@ -151,4 +153,84 @@ button:hover{
   max-width: 33.33333%;
   background: var(--dark);
 }
+/* cart domaci */
+body{
+  font-family: Arial, Helvetica, sans-serif;
+}
 
+h1, h2, h3{
+  margin: 0.5rem 0;
+}
+h1{
+  font-size: 1.5rem;
+}
+h2{
+  font-size: 1.2rem;
+}
+h3{
+  font-size: 1rem;
+}
+a{
+  text-decoration: none;
+}
+.row{
+  display: flex;
+  justify-content: space-between;
+}
+.col-1{
+  flex: 1;
+}
+.col-2{
+  flex: 2;
+}
+.block{
+  background-color: #e0e0e0;
+  padding: 1rem;
+  margin: 0.5rem;
+  border-radius: 0.5rem;
+}
+.row.center{
+  align-items: center;
+}
+
+img.small{
+  max-height: 8rem;
+}
+
+.inputdiv{
+  width: 100%;
+  height: 25vh;
+  /* border: 1px solid black; */
+background-color: coral;
+display: flex;
+justify-content: center;
+align-items: center;
+
+}
+input{
+  width: 250px;
+  height: 30px;
+}
+.dugme{
+  margin: 0px;
+  border-radius: 10px;
+}
+/* fetch primer css */
+ul{
+ text-align: center;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-evenly;
+  
+   list-style-type: none;
+}
+
+li{
+  width: 30%;
+  height: 300px;
+  border: 1px solid black;
+  border-radius: 16px;
+  background-color:rgb(245, 145, 109);
+  padding: 16px;
+  margin: 20px; 
+}
