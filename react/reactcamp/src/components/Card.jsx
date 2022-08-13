@@ -1,9 +1,12 @@
-import { useState } from "react"
+import { useReducer, useState } from "react"
+
+//...
 
 const Card=()=>{
     
-   const[bledo, setbledo]=useState(false)
+    const[bledo, setbledo]=useState(false)
    
+   //const[change, dispatch]=useReducer(reducer, false)
 
  return(   <div className="card" style={{opacity:bledo?"0.5":"", marginLeft:bledo?"50px":""}}>
 <input type="text" onChange={()=>{

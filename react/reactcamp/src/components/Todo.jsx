@@ -1,3 +1,4 @@
+import Card from "./Card"
 const Todo =()=>{
     return(
         <div className="container">
