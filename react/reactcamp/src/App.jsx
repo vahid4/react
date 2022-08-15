@@ -11,6 +11,7 @@ import Fetchprimer from "./components/Fetchprimer";
 import FetchdinamicURL from "./components/FetchdinamicURL"
 import { Route, Routes } from "react-router-dom";
 import Todo from "./components/Todo"
+import Cart2 from "./components/Cart2/Cart2";
 
 //https://rapidapi.com/divad12/api/numbers-1/
 const App =()=>{
@@ -19,7 +20,7 @@ const App =()=>{
   
   return(
     <div>
-     
+     <Cart2/>
     </div>
   )
 
