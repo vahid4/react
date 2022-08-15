@@ -1,5 +1,5 @@
 const Cart2 =()=>{
-
+//nesto
     return(
        <div className="App">
       <HeaderCart/>
