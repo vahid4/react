@@ -12,16 +12,24 @@ import FetchdinamicURL from "./components/FetchdinamicURL"
 import { Route, Routes } from "react-router-dom";
 import Todo from "./components/Todo"
 import Cart2 from "./components/Cart2/Cart2";
+import { useContext } from "react";
+import CardContext from "./components/UseContext/CardContext";
+import MyComponent from "./components/UseContext/MyComponent";
 
 //https://rapidapi.com/divad12/api/numbers-1/
-const App =()=>{
 
+export const UserContext=React.createContext();
+const App =()=>{
+const [myState, setmyState] = useState("vahid")
 
   
   return(
+    <UserContext.Provider/>
     <div>
-     <Cart2/>
+     <CardContext/>
+     <MyComponent/>
     </div>
+    <UserContext.Provider/>
   )
 
     }

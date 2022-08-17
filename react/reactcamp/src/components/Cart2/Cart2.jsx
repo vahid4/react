@@ -14,14 +14,17 @@ const onAdd=(product)=>{
     setcartItems(cartItems.map(x=>x.id===product.id ?{...exist, qty:exist.qty+1}:x))
     
   }
+  else{
+    setcartItems([...cartItems, {...product, qty:1}])
+  }
 }
 
     return(
        <div className="App">
       <HeaderCart/>
       <div className="row">
-        <MainCart products={Data.products}/>
-        <BasketCart cartItems={cartItems} ></BasketCart>
+        <MainCart onAdd={onAdd} products={Data.products}/>
+        <BasketCart onAdd={onAdd} cartItems={cartItems} ></BasketCart>
       </div>
        </div>
        
