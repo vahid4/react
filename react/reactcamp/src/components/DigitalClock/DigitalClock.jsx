@@ -5,13 +5,16 @@ function DigitalClock() {
   let time = new Date().toLocaleTimeString();
 
   const [ctime, setCtime] = useState(time);
- const UpdateTime=()=>{
-    
- }
+  const UpdateTime = () => {
+    time = new Date().toLocaleTimeString();
+    setCtime(time);
+  };
+
+  setInterval(UpdateTime, 1000);
+
   return (
     <div className="container">
-      <h1>{time}</h1>
-      <button onClick={UpdateTime}>get time</button>
+      <h1>{ctime}</h1>
     </div>
   );
 }
