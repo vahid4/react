@@ -13,25 +13,22 @@ import { Route, Routes } from "react-router-dom";
 import Todo from "./components/Todo"
 import Cart2 from "./components/Cart2/Cart2";
 import { useContext } from "react";
-import CardContext from "./components/UseContext/CardContext";
+import CardContext, { Context } from "./components/UseContext/CardContext";
 import MyComponent from "./components/UseContext/MyComponent";
+import DigitalClock from "./components/DigitalClock/DigitalClock";
 
 //https://rapidapi.com/divad12/api/numbers-1/
 
-export const UserContext=React.createContext();
+
 const App =()=>{
-const [myState, setmyState] = useState("vahid")
+
 
   
-  return(
-    <UserContext.Provider/>
-    <div>
-     <CardContext/>
-     <MyComponent/>
+  return( <div>
+    
+<DigitalClock/>
     </div>
-    <UserContext.Provider/>
   )
-
     }
 
 export default App
